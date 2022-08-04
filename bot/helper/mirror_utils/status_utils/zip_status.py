@@ -10,7 +10,6 @@ class ZipStatus:
         self.__gid = gid
         self.__size = size
         self.__listener = listener
-        self.__uid = listener.uid
         self.__start_time = time()
         self.message = listener.message
         self.message = message
