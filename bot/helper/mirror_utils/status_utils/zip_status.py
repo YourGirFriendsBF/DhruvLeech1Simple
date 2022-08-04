@@ -4,7 +4,7 @@ from bot.helper.ext_utils.bot_utils import get_readable_file_size, MirrorStatus,
 from bot.helper.ext_utils.fs_utils import get_path_size
 
 
-class SplitStatus:
+class ZipStatus:
     def __init__(self, name, size, gid, listener, message):
         self.__name = name
         self.__gid = gid
