@@ -1,5 +1,5 @@
 from bot.helper.ext_utils.bot_utils import get_readable_file_size, MirrorStatus
-
+from time import time
 
 class SplitStatus:
     def __init__(self, name, path, size):
@@ -8,26 +8,34 @@ class SplitStatus:
         self.__size = size
 
     def progress(self):
+
         return '0'
-    def size_raw(self):
-        return self.__size 
+
     def speed(self):
+
         return '0'
 
     def name(self):
+
         return self.__name
 
     def path(self):
+
         return self.__path
 
     def size(self):
+
         return get_readable_file_size(self.__size)
 
     def eta(self):
+
         return '0s'
 
     def status(self):
+
         return MirrorStatus.STATUS_SPLITTING
 
+
     def processed_bytes(self):
+
         return 0
