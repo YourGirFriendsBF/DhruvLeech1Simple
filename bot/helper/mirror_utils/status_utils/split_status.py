@@ -11,6 +11,9 @@ class SplitStatus:
 
         return '0'
 
+    def size_raw(self):
+        return self.__size
+
     def speed(self):
 
         return '0'
